@@ -32,7 +32,7 @@ def is_validated_number(val:str):
 
 def get_not_duplicated_three_digit_number()->int:
   while 1:
-    tmp = get_random_number()
+    tmp = str(get_random_number())
     if is_validated_number(tmp):
       return int(tmp)
 
