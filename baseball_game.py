@@ -26,7 +26,7 @@ def is_duplicated_number(val:str):
 def is_validated_number(val:str):
   if is_digit(val):
     if is_between_100_and_999(val):
-      if is_duplicated_number(val):
+      if not is_duplicated_number(val):
         return True
   return False
 
