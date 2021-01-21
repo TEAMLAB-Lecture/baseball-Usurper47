@@ -20,8 +20,8 @@ def is_between_100_and_999(val:str):
 def is_duplicated_number(val:str):
   from collections import Counter
   if len(Counter(val)) == 3:
-    return True
-  return False
+    return False
+  return True
 
 def is_validated_number(val:str):
   if is_digit(val):
