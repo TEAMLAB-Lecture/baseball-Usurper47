@@ -43,6 +43,8 @@ def get_strikes_or_ball(player:str, computer:str):
     if p == c:
       strikes += 1
       balls -= 1
+  #strikes = len([ _ for p, c in zip(player, computer) if p == c])
+  #balls = len(set(player) & set(computer)) - strikes
   return [strikes, balls]
 
 def is_yes(s):
